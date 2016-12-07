@@ -83,7 +83,7 @@ public:
         // Climb upwards through inheritance hierarchy.
         // Dual inheritance is catered for.
 
-    bool IsKindOf(const wxClassInfo *info) const
+    bool __attribute__((optimize("O0"))) IsKindOf(const wxClassInfo *info) const
     {
         return info != 0 &&
                ( info == this ||
